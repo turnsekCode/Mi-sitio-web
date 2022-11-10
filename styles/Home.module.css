@@ -1,5 +1,7 @@
 .page_wrapper{
   overflow: hidden;
+  max-width: 1350px;
+  margin: 0 auto;
 }
 .background_shape_1{
   position: absolute;

@@ -1,3 +1,83 @@
 .page_padding{
-    height: 50vh;
+    height: 440px;
+}
+.bgimg{
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../public/imagenes/parallax.jpg);
+    height: 100%;
+}
+.caption{
+    position: absolute;
+    left: 23%;
+    top: 13%;
+    width: 55%;
+    height: 330px;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.caption h2 {
+    font-size: 48px;
+    font-weight: 500;
+}
+.caption p {
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+.boton{
+    position: relative;
+    overflow: visible;
+    padding: 14px 35px 15px;
+    border: none;
+    z-index: 1;
+          
+}
+.boton:hover a{
+    background: transparent;
+}
+.boton:hover::before {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.9);
+    transition-duration: .2s;
+}
+.boton:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition-duration: .3s;
+    transition-delay: .1s;
+}
+.boton:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+    background-color: #6333ff;
+    border-color: #151515;
+}
+.boton:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-width: 2px;
+    border-style: solid;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease 0s;
+    transform: scale(1.05);
+    will-change: transform;
+    z-index: -1;
 }

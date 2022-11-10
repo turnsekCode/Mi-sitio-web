@@ -8,6 +8,7 @@ import { Tecnology } from "../componentes/tecnologias/Tecnology";
 import { Servicios } from "../componentes/servicios/Servicios";
 import { Proyectos } from "../componentes/proyectos/Proyectos";
 import { Parallax1 } from "../componentes/parallax/Parallax";
+import { Avatar } from "../componentes/avatar_index/avatar";
 
 export default function Home() {
   return (
@@ -37,7 +38,7 @@ export default function Home() {
           <section>
             <div className={styles.page_padding}>
               <div className={styles.container_medium}>
-                <h1>HAZ CONOCER TU MARCA EN EL MUNDO & CREA UN SITIO WEB</h1>
+                <h1>CREA UN SITIO WEB & HAZ CONOCER TU MARCA EN EL MUNDO</h1>
                 <div className={styles.text_color_light}>
                   Desarrollador web profesional a tú disposición, confía en mi
                   experiencia
@@ -74,9 +75,10 @@ export default function Home() {
           <Tecnology />
           <Servicios />
           <Proyectos />
-          <Parallax1 />
         </main>
       </div>
+      <Parallax1 />
+      <Avatar />
     </>
   );
 }
