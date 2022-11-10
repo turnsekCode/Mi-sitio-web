@@ -1,0 +1,38 @@
+.boton {
+    min-width: 175px;
+    color: #fff;
+    padding: 15px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: #6333ff;
+    text-align: center;
+    font-size: 18px;
+}
+.boton:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+.boton:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+.boton:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 25px;
+    line-height: 40px;
+    top: 4px;
+    right: -20px;
+    transition: 0.4s;
+}

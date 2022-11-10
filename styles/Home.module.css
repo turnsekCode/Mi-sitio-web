@@ -1,129 +1,149 @@
-.container {
-  padding: 0 2rem;
+.page_wrapper{
+  overflow: hidden;
 }
-
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.background_shape_1{
+  position: absolute;
+  left: 0%;
+  top: -10rem;
+  right: auto;
+  bottom: auto;
+  z-index: -1;
+  max-width: 50%;
 }
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+.background_shape_2{
+  position: absolute;
+  left: auto;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  z-index: -1;
+  max-width: 60%;
 }
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.background_shape_3{
+  position: absolute;
+  left: auto;
+  top: 120rem;
+  right: 0%;
+  bottom: auto;
+  z-index: -1;
+  max-width: 50%;
 }
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.main_wrapper {
+  padding-top: 60px;
 }
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+.container_medium h1{
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  font-size: 3.375rem;
+  line-height: 5.25rem;
+  font-weight: 600;
+  letter-spacing: -1px;
   text-align: center;
+  margin-bottom: 45px;
 }
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.page_padding{
+  overflow: hidden;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  align-items: center;
+  height: 84vh;
+}
+.text_color_light{
+  color: #788ca0;
+  font-size: 25px;
+  line-height: 2rem;
+  letter-spacing: 0.25px;
+  text-align: center;
+  margin-top: 30px;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+/*estilos boton contacto*/
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 8px 22px;
+  transition: all 0.2s ease;
+}
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background-color: #6333ff;
+  opacity: 0.5;
+  width: 56px;
+  height: 56px;
+  transition: all 0.3s ease;
+}
+.cta span {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.cta svg {
+  position: relative;
+  top: 6px;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #fff;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+.cta:hover:before {
+  width: 100%;
+  background-color: #6333ff;
+}
+.cta:hover svg {
+  transform: translateX(0);
+}
+.cta:active {
+  transform: scale(0.96);
+}
+.header_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+}
+/*fin estilos boton contacto*/
+
+.container_middle{
+  overflow: hidden;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.left_side{
+  width: 35%;
+}
+.img_left{
+  width: 100%;
+  border-radius: 1rem;
+}
+.container_boton {
+  position: absolute;
+  bottom: -210px;
+  display: flex;
+  gap: 15px;
+}
+.right_side{
+  width: 45%;
+}
+.right_side h3{
+  margin: 0 0 22px 0;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
-}

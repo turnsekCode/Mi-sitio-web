@@ -1,0 +1,41 @@
+.left_side {
+    width: 35%;
+}
+.img_left {
+    width: 100%;
+    border-radius: 1rem;
+}
+.right_side {
+    width: 45%;
+    height: 265px;
+}
+.nav_items {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #788ca0;
+}
+.nav_item {
+    cursor: pointer;
+    line-height: 21px;
+}
+.item_active {
+    border-bottom: 3.5px solid #6333ff;
+}
+.tab_content {
+    position: relative;
+}
+.tab_pane {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s;
+    text-align: justify;
+    line-height: 30px;
+}
+.tab_pane_active {
+    visibility: visible;
+    opacity: 1;
+}

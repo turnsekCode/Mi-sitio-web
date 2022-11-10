@@ -1,0 +1,52 @@
+.nav_container{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    z-index: 100;
+    padding: 1rem 4.5rem;
+    background-color: #0e0e12;
+}
+.nav_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ul_container{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    list-style: none;
+    font-size: 16px;
+}
+.ul_container li a{
+    color: #788ca0;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+.ul_container li a:hover {
+    color: #fff;
+}
+.nav_logo{
+    max-height: 1.75rem;
+}
+.horario{
+    display: flex;
+    font-size: 14px;
+    gap: 5px;
+    align-items: center;
+}
+.horario p, .horario a{
+    margin: 0;
+    color: #788ca0;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.horario p:hover, .horario a:hover {
+    color: #fff;
+}
+.horario svg{
+    color: #2FAB31;
+}

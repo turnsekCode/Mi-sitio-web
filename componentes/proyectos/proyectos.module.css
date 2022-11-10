@@ -1,0 +1,15 @@
+.page_padding {
+    overflow: hidden;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    height: 100vh;
+}
+.container_large h2 {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    font-size: 3rem;
+    line-height: 4.25rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+}
