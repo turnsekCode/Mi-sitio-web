@@ -1,13 +1,14 @@
 import "../styles/globals.css";
 import { NavBarDesktop } from "../componentes/navbarDesktop/NavBarDesktop";
-import { ParallaxProvider } from "react-scroll-parallax";
+import { Footer } from "../componentes/footer/Footer";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ParallaxProvider scrollAxis="vertical">
+    <>
       <NavBarDesktop />
       <Component {...pageProps} />
-    </ParallaxProvider>
+      <Footer />
+    </>
   );
 }
 

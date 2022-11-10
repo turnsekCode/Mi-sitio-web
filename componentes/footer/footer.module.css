@@ -1,0 +1,19 @@
+.contenedor_footer{
+    position: relative;
+        height: 50vh;
+}
+.imagen1{
+position: absolute;
+    left: auto;
+    top: -30rem;
+    right: 0%;
+    bottom: auto;
+    z-index: -1;
+    max-width: 40rem;
+}
+.imagen2 {
+        z-index: -1;
+        overflow: hidden;
+        width: 35rem;
+        height: 35rem;
+}
